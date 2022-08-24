@@ -15,14 +15,13 @@ public class scr_CannonShooting : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             _timer += Time.deltaTime;
+            
             if (_timer >= _timeBetweenClicks)
             {
                 IsShooting?.Invoke();
                 _timer = 0;
                 Instantiate(_bulletPrefab, _barrel.transform.position, quaternion.identity);
             }
-
-           
         }
     }
 }

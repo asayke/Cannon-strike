@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2896740783221554067}
   - component: {fileID: 2896740783221554066}
   - component: {fileID: 2896740783221554069}
+  - component: {fileID: 9097046945597532397}
   m_Layer: 0
   m_Name: Well
   m_TagString: Untagged
@@ -126,3 +127,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &9097046945597532397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2896740783221554068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe80d4db17e9c448a856c9f62d01f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ballLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
