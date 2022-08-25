@@ -22,4 +22,6 @@ public class MenuButtonsScriots : MonoBehaviour
         _chooseLevelObject.SetActive(true);
         _tittleObject.SetActive(false);
     }
+
+    public void ResetVolueValue() => AudioListener.pause = !AudioListener.pause;
 }
