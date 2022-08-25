@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class scr_LevelCompleteConroller : MonoBehaviour
 {
-    [SerializeField] private GameObject UiLevelCompleteObject;
+    [SerializeField] private GameObject _uiLevelCompleteObject;
     
     private void OnEnable()
     {
@@ -16,8 +16,8 @@ public class scr_LevelCompleteConroller : MonoBehaviour
 
     private void Start()
     {
-        UiLevelCompleteObject.SetActive(false);
+        _uiLevelCompleteObject.SetActive(false);
     }
 
-    private void EnableLeveleCompleteUI() => UiLevelCompleteObject.SetActive(true);
+    private void EnableLeveleCompleteUI() => _uiLevelCompleteObject.SetActive(true);
 }

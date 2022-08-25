@@ -33,10 +33,6 @@ public class scr_BallsInfo : MonoBehaviour
             BallsIntoTrigger++;
             scr_ResetNeedToWinBalls.ResetText(BallsIntoTrigger);
         }
-        else
-        {
-            return;
-        }
     }
 
     private void IncActualBalls()
