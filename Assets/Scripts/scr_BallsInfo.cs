@@ -5,7 +5,7 @@ public class scr_BallsInfo : MonoBehaviour
     [SerializeField] private LevelSettings _levelSettings;
     public static int ActualBalls;
     public static int BallsNeedToWin;
-    private int _ballsIntoTrigger;
+    public static int BallsIntoTrigger;
 
     private void OnEnable()
     {
@@ -21,14 +21,15 @@ public class scr_BallsInfo : MonoBehaviour
 
     private void Start()
     {
+        BallsIntoTrigger = 0;
         ActualBalls = _levelSettings.MaxBalls;
         BallsNeedToWin = _levelSettings.NeedBallsToWin;
     }
 
     private void IncNeedToWinBalls()
     {
-        _ballsIntoTrigger++;
-        scr_ResetNeedToWinBalls.ResetText(_ballsIntoTrigger);
+        BallsIntoTrigger++;
+        scr_ResetNeedToWinBalls.ResetText(BallsIntoTrigger);
     }
 
     private void IncActualBalls()
