@@ -28,12 +28,21 @@ public class scr_BallsInfo : MonoBehaviour
 
     private void IncNeedToWinBalls()
     {
-        BallsIntoTrigger++;
-        scr_ResetNeedToWinBalls.ResetText(BallsIntoTrigger);
+        if (BallsIntoTrigger < BallsNeedToWin)
+        {
+            BallsIntoTrigger++;
+            scr_ResetNeedToWinBalls.ResetText(BallsIntoTrigger);
+        }
+        else
+        {
+            return;
+        }
     }
 
     private void IncActualBalls()
     {
+        if (ActualBalls == 0) return;
+
         ActualBalls--;
         scr_ResetActuallBallsText.ResetText();
     }

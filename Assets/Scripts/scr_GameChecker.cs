@@ -5,6 +5,7 @@ using UnityEngine;
 public class scr_GameChecker : MonoBehaviour
 {
     private WaitForSeconds _waitForSeconds;
+    public static Action OnWinned;
 
     private IEnumerator ResetScreen()
     {
@@ -19,6 +20,12 @@ public class scr_GameChecker : MonoBehaviour
 
     private void Update()
     {
+        if (scr_BallsInfo.BallsIntoTrigger == scr_BallsInfo.BallsNeedToWin)
+        {
+            StopCoroutine(ResetScreen());
+            OnWinned?.Invoke();
+        }
+
         if (scr_BallsInfo.ActualBalls == 0)
             StartCoroutine(ResetScreen());
     }
