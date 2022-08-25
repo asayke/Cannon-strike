@@ -1,5 +1,4 @@
 using System;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class scr_CannonShooting : MonoBehaviour
@@ -9,18 +8,24 @@ public class scr_CannonShooting : MonoBehaviour
     [SerializeField] private Transform _barrel;
     private float _timer;
     public static Action IsShooting;
+    public static bool CouldShoot;
+
+    private void Start()
+    {
+        CouldShoot = true;
+    }
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && CouldShoot)
         {
             _timer += Time.deltaTime;
-            
+
             if (_timer >= _timeBetweenClicks)
             {
                 IsShooting?.Invoke();
                 _timer = 0;
-                Instantiate(_bulletPrefab, _barrel.transform.position, quaternion.identity);
+                Instantiate(_bulletPrefab, _barrel.transform.position, Quaternion.identity);
             }
         }
     }
