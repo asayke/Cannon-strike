@@ -20,7 +20,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/5f/800139a4/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/scr_ResetActuallBallsText.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2DnaflOb6wn5thYhXMr5WF2P4LZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -80,6 +79,7 @@
       <workItem from="1661463584599" duration="967000" />
       <workItem from="1661466452964" duration="1306000" />
       <workItem from="1661469114193" duration="1695000" />
+      <workItem from="1661515431438" duration="1369000" />
     </task>
     <servers />
   </component>
