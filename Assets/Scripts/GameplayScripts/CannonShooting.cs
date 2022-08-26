@@ -3,9 +3,7 @@ using UnityEngine;
 
 public class CannonShooting : MonoBehaviour
 {
-    [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _timeBetweenClicks;
-    [SerializeField] private Transform _barrel;
     private float _timer;
     public static Action IsShooting;
     public static bool CouldShoot;
@@ -25,7 +23,6 @@ public class CannonShooting : MonoBehaviour
             {
                 IsShooting?.Invoke();
                 _timer = 0;
-                Instantiate(_bulletPrefab, _barrel.transform.position, Quaternion.identity);
             }
         }
     }

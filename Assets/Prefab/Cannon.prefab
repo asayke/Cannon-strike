@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 8422022820573762678}
   - component: {fileID: 1031121565506864919}
   - component: {fileID: 6371635547008550247}
+  - component: {fileID: 8052321336460410228}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -186,7 +187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32777bcfa6e8665439309654e094a96a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bulletPrefab: {fileID: 935048850903071201, guid: f92e8f76b1ee06b4991f347043321a8c, type: 3}
   _timeBetweenClicks: 0.25
   _barrel: {fileID: 116251000537243992}
 --- !u!114 &8422022820573762678
@@ -313,3 +313,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shootClip: {fileID: 8300000, guid: cc4cdf978c6883e42ae4381a4b17b004, type: 3}
+--- !u!114 &8052321336460410228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626634186290996992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba7a79af6838eba47bedad809430f072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 935048850903071201, guid: f92e8f76b1ee06b4991f347043321a8c, type: 3}
+  _spawnPoint: {fileID: 116251000537243992}

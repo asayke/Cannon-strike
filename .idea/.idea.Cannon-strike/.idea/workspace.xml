@@ -20,6 +20,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/5f/800139a4/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/b9/eab2e7d3/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/42/System.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2DnaflOb6wn5thYhXMr5WF2P4LZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -81,6 +83,7 @@
       <workItem from="1661469114193" duration="1695000" />
       <workItem from="1661515431438" duration="1659000" />
       <workItem from="1661518660658" duration="4628000" />
+      <workItem from="1661526914654" duration="6023000" />
     </task>
     <servers />
   </component>

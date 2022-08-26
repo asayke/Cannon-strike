@@ -2408,6 +2408,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8052321336460410228, guid: 92239d02c410e394da44b07b3745fc87, type: 3}
+      propertyPath: _ballPrefab
+      value: 
+      objectReference: {fileID: 935048850903071201, guid: f92e8f76b1ee06b4991f347043321a8c, type: 3}
+    - target: {fileID: 8052321336460410228, guid: 92239d02c410e394da44b07b3745fc87, type: 3}
+      propertyPath: _spawnPoint
+      value: 
+      objectReference: {fileID: 116251000441435544}
     - target: {fileID: 8422022820573762678, guid: 92239d02c410e394da44b07b3745fc87, type: 3}
       propertyPath: _shootOffset
       value: 0.15
@@ -2422,6 +2430,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92239d02c410e394da44b07b3745fc87, type: 3}
+--- !u!4 &116251000441435544 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 116251000537243992, guid: 92239d02c410e394da44b07b3745fc87, type: 3}
+  m_PrefabInstance: {fileID: 116251000441435543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4082382315179388127
 PrefabInstance:
   m_ObjectHideFlags: 0

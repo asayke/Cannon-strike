@@ -5,6 +5,10 @@ public class ResetActuallBallsText : MonoBehaviour
 {
     private static TextMeshProUGUI _actualBallText;
 
+    private void OnEnable() => CannonShooting.IsShooting += IncActualBalls;
+
+    private void OnDisable() => CannonShooting.IsShooting -= IncActualBalls;
+
     private void Awake()
     {
         _actualBallText = GetComponent<TextMeshProUGUI>();
@@ -16,4 +20,12 @@ public class ResetActuallBallsText : MonoBehaviour
     }
 
     public static void ResetText() => _actualBallText.SetText($"{BallsInfo.ActualBalls}");
+
+    private void IncActualBalls()
+    {
+        if (BallsInfo.ActualBalls == 0) return;
+
+        BallsInfo.ActualBalls--;
+        ResetText();
+    }
 }
