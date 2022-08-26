@@ -2,7 +2,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class scr_ScreenFade : MonoBehaviour
+public class ScreenFade : MonoBehaviour
 {
     [SerializeField] private float _fadeDuration;
     [SerializeField] private float _outFadeDuration;

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class scr_BulletMovement : MonoBehaviour
+public class BulletMovement : MonoBehaviour
 {
     [SerializeField] private float _speed;
     private Rigidbody2D _rigidbody2D;

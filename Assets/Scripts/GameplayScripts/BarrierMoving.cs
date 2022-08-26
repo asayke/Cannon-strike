@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class scr_BarrierMoving : MonoBehaviour
+public class BarrierMoving : MonoBehaviour
 {
     [SerializeField] private float _intervalTime;
     [SerializeField] private float _xOffset;

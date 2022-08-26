@@ -1,17 +1,17 @@
 using UnityEngine;
 
-public class scr_LevelCompleteConroller : MonoBehaviour
+public class LevelCompleteConroller : MonoBehaviour
 {
     [SerializeField] private GameObject _uiLevelCompleteObject;
     
     private void OnEnable()
     {
-        scr_GameChecker.OnWinned += EnableLeveleCompleteUI;
+        GameChecker.OnWinned += EnableLeveleCompleteUI;
     }
 
     private void OnDisable()
     {
-        scr_GameChecker.OnWinned -= EnableLeveleCompleteUI;
+        GameChecker.OnWinned -= EnableLeveleCompleteUI;
     }
 
     private void Start()

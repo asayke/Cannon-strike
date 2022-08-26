@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class scr_BallsInfo : MonoBehaviour
+public class BallsInfo : MonoBehaviour
 {
     [SerializeField] private LevelSettings _levelSettings;
     public static int ActualBalls;
@@ -9,14 +9,14 @@ public class scr_BallsInfo : MonoBehaviour
 
     private void OnEnable()
     {
-        scr_CannonShooting.IsShooting += IncActualBalls;
-        scr_BallEnteredTrigger.OnTriggered += IncNeedToWinBalls;
+        CannonShooting.IsShooting += IncActualBalls;
+        BallEnteredTrigger.OnTriggered += IncNeedToWinBalls;
     }
 
     private void OnDisable()
     {
-        scr_CannonShooting.IsShooting -= IncActualBalls;
-        scr_BallEnteredTrigger.OnTriggered -= IncNeedToWinBalls;
+        CannonShooting.IsShooting -= IncActualBalls;
+        BallEnteredTrigger.OnTriggered -= IncNeedToWinBalls;
     }
 
     private void Start()
@@ -31,7 +31,7 @@ public class scr_BallsInfo : MonoBehaviour
         if (BallsIntoTrigger < BallsNeedToWin)
         {
             BallsIntoTrigger++;
-            scr_ResetNeedToWinBalls.ResetText(BallsIntoTrigger);
+            ResetNeedToWinBalls.ResetText(BallsIntoTrigger);
         }
     }
 
@@ -40,6 +40,6 @@ public class scr_BallsInfo : MonoBehaviour
         if (ActualBalls == 0) return;
 
         ActualBalls--;
-        scr_ResetActuallBallsText.ResetText();
+        ResetActuallBallsText.ResetText();
     }
 }

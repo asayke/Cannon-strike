@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class scr_CannonShooting : MonoBehaviour
+public class CannonShooting : MonoBehaviour
 {
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _timeBetweenClicks;

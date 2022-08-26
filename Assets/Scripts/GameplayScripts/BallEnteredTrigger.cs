@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class scr_BallEnteredTrigger : MonoBehaviour
+public class BallEnteredTrigger : MonoBehaviour
 {
     [SerializeField] private LayerMask _ballLayerMask;
     public static Action OnTriggered;

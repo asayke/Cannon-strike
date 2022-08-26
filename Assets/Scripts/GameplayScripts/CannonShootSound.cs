@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class scr_CannonShootSound : MonoBehaviour
+public class CannonShootSound : MonoBehaviour
 {
     [SerializeField] private AudioClip _shootClip;
     private static AudioSource _audioSource;
@@ -8,12 +8,12 @@ public class scr_CannonShootSound : MonoBehaviour
 
     private void OnEnable()
     {
-        scr_CannonShooting.IsShooting += PlayShootSound;
+        CannonShooting.IsShooting += PlayShootSound;
     }
 
     private void OnDisable()
     {
-        scr_CannonShooting.IsShooting += PlayShootSound;
+        CannonShooting.IsShooting += PlayShootSound;
     }
 
     private void Awake()

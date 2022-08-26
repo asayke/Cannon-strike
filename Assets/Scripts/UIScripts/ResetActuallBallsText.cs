@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class scr_ResetActuallBallsText : MonoBehaviour
+public class ResetActuallBallsText : MonoBehaviour
 {
     private static TextMeshProUGUI _actualBallText;
 
@@ -12,8 +12,8 @@ public class scr_ResetActuallBallsText : MonoBehaviour
 
     private void Start()
     {
-        _actualBallText.SetText($"{scr_BallsInfo.ActualBalls}");
+        _actualBallText.SetText($"{BallsInfo.ActualBalls}");
     }
 
-    public static void ResetText() => _actualBallText.SetText($"{scr_BallsInfo.ActualBalls}");
+    public static void ResetText() => _actualBallText.SetText($"{BallsInfo.ActualBalls}");
 }

@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class scr_CannonShootAnimation : MonoBehaviour
+public class CannonShootAnimation : MonoBehaviour
 {
     [SerializeField] private float _toOffsetDuration;
     [SerializeField] private float _backToOriginalDuration;
@@ -11,12 +11,12 @@ public class scr_CannonShootAnimation : MonoBehaviour
 
     private void OnEnable()
     {
-        scr_CannonShooting.IsShooting += ShootAnimationPlay;
+        CannonShooting.IsShooting += ShootAnimationPlay;
     }
 
     private void OnDisable()
     {
-        scr_CannonShooting.IsShooting -= ShootAnimationPlay;
+        CannonShooting.IsShooting -= ShootAnimationPlay;
     }
 
     private void Start()

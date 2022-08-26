@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class scr_BarrierRotation : MonoBehaviour
+public class BarrierRotation : MonoBehaviour
 {
     [SerializeField] private float _rotatingTime;
 

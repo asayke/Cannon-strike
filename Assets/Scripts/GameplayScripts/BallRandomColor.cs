@@ -1,7 +1,7 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class scr_BallRandomColor : MonoBehaviour
+public class BallRandomColor : MonoBehaviour
 {
     private SpriteRenderer _ballRenderer;
 
