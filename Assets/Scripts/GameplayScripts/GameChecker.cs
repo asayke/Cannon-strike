@@ -14,15 +14,9 @@ public class GameChecker : MonoBehaviour
         ScreenFade.ScreenReset();
     }
 
-    private void Awake()
-    {
-        _waitForSeconds = new WaitForSeconds(3f);
-    }
+    private void Awake() => _waitForSeconds = new WaitForSeconds(3f);
 
-    private void Start()
-    {
-        GameWinned = false;
-    }
+    private void Start() => GameWinned = false;
 
     private void Update()
     {

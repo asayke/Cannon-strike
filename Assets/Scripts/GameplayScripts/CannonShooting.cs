@@ -8,10 +8,7 @@ public class CannonShooting : MonoBehaviour
     public static Action IsShooting;
     public static bool CouldShoot;
 
-    private void Start()
-    {
-        CouldShoot = true;
-    }
+    private void Start() => CouldShoot = true;
 
     private void Update()
     {
@@ -22,6 +19,7 @@ public class CannonShooting : MonoBehaviour
             if (_timer >= _timeBetweenClicks)
             {
                 IsShooting?.Invoke();
+                BallSpawner.Spawn();
                 _timer = 0;
             }
         }

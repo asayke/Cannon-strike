@@ -9,15 +9,9 @@ public class CannonShootAnimation : MonoBehaviour
     private Vector2 _offsetPostion;
     private Vector3 _originalPostion;
 
-    private void OnEnable()
-    {
-        CannonShooting.IsShooting += ShootAnimationPlay;
-    }
+    private void OnEnable() => CannonShooting.IsShooting += ShootAnimationPlay;
 
-    private void OnDisable()
-    {
-        CannonShooting.IsShooting -= ShootAnimationPlay;
-    }
+    private void OnDisable() => CannonShooting.IsShooting -= ShootAnimationPlay;
 
     private void Start()
     {

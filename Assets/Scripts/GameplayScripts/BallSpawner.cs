@@ -1,13 +1,17 @@
 using UnityEngine;
 
-public class BallSpawner : MonoBehaviour, ISpawner
+public class BallSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private Transform _spawnPoint;
+    private static GameObject _bulletPrefabS;
+    private static Transform _spawnPointS;
 
-    private void OnEnable() => CannonShooting.IsShooting += Spawn;
+    private void Start()
+    {
+        _bulletPrefabS = _bulletPrefab;
+        _spawnPointS = _spawnPoint;
+    }
 
-    private void OnDisable() => CannonShooting.IsShooting -= Spawn;
-
-    public void Spawn() => Instantiate(_bulletPrefab, _spawnPoint.position, Quaternion.identity);
+    public static void Spawn() => Instantiate(_bulletPrefabS, _spawnPointS.position, Quaternion.identity);
 }
